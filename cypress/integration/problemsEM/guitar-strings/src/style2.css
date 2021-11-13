@@ -1,0 +1,147 @@
+body {
+	margin: 25px;
+	padding: 0px;
+}
+canvas {
+	background: none; 
+	margin: auto;
+	display: block;
+	width: 715px;
+	height: 20px;
+  position: absolute;
+  left: 160px;
+}
+.ukulele-model{
+  width: 800px;
+  height: 340px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#string-1{
+  top: 142px;
+  transform: rotate(-2deg);
+}
+#string-2{
+  top: 158px;
+  transform: rotate(-1deg);
+}
+#string-3{
+  top: 170px;
+}
+#string-4{
+  top: 186px;
+  transform: rotate(1deg);
+}
+.finger-position{
+  position: absolute;
+  width:10px;
+  height:10px;
+  background: red;
+  border-radius: 100%;
+  transition: 0.3s;
+  left:178px;
+  z-index: 10;
+}
+#finger-p-1{
+  top: 156px;
+}
+#finger-p-2{
+  top: 168px;
+}
+#finger-p-3{
+  top: 178px
+}
+#finger-p-4{
+  top: 189px
+}
+.ch{
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+}
+
+        .chords-list input[type="radio"] {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+        .chords-list input[type="radio"] + label {
+            position: relative;
+            display: block;
+            padding: 0 0 0 1.75em;
+            margin-bottom: 1em;
+            font-size: 30px;
+            line-height: 1.25;
+            font-family: Gaegu, sans-serif;
+        }
+        .chords-list input[type="radio"] + label span {
+            position: absolute;
+            top: 0.15em;
+            left: 0;
+            transition: all 50ms ease-out;
+            display: inline-block;
+            vertical-align: bottom;
+            background: white;
+            border-radius: 50%;
+            border: 0.075em solid black;
+            box-shadow: 0.05em 0.05em rgba(0, 0, 0, 0.1), 0.1em 0.1em rgba(0, 0, 0, 0.1);
+            width: 2em;
+            height: 2em;
+            font-size: 0.6em;
+            cursor: pointer;
+            text-align: center;
+            line-height: 2;
+        }
+
+        .chords-list input[type="radio"] + label span:before {
+            transition: all 50ms ease-out;
+            position: absolute;
+            top: -0.225em;
+            left: -0.075em;
+            z-index: 0;
+            display: block;
+            border-radius: 50%;
+            border: 0.075em solid black;
+            width: 100%;
+            height: 100%;
+            content: '';
+            border-bottom: 0;
+            border-left: 0;
+            border-right: 0;
+        }
+
+
+        .chords-list input[type="radio"] + label:active span {
+            box-shadow: inset 0 0 0.25em rgba(0, 0, 0, 0.5);
+        }
+        .chords-list input[type="radio"] + label.active span {
+            top: 0;
+            background: #F0C029;
+        }
+        .chords-list input[type="radio"] + label.active span::before {
+            top: -0.075em;
+        }
+        .chords-list input[type="radio"]:checked + label span {
+            top: 0;
+            background: #F0C029;
+        }
+        .chords-list input[type="radio"]:checked + label span::before {
+            top: -0.075em;
+        }
+        .chords-list input[type="radio"]:checked + label:not(.active) span {
+            box-shadow: 0 0 rgba(0, 0, 0, 0.2);
+        }
+.text-abs{
+    position: absolute;
+    left: 352px;
+    transform: rotate(-14deg);
+    top: 119px;
+}

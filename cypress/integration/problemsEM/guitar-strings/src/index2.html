@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guitar</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+  <div class="chords-list">
+    <div class="ch">
+      <input type="radio" id="none" class="change-chord" name="chords" checked="checked">
+      <label for="none"><span>no</span></label>
+    </div>
+
+    <div class="ch">
+      <input type="radio" id="Am" class="change-chord" name="chords">
+      <label for="Am"><span>Am</span></label>
+    </div>
+
+    <div class="ch">
+      <input type="radio" id="A" class="change-chord" name="chords">
+      <label for="A"><span>A</span></label>
+    </div>
+
+    <div class="ch">
+      <input type="radio" id="Dm" class="change-chord" name="chords">
+      <label for="Dm"><span>Dm</span></label>
+    </div>
+
+    <div class="ch">
+      <input type="radio" id="D" class="change-chord" name="chords">
+      <label for="D"><span>D</span></label>
+    </div>
+
+    <div class="ch">
+      <input type="radio" id="E" class="change-chord" name="chords">
+      <label for="E"><span>E</span></label>
+    </div>
+
+    <div class="ch">
+      <input type="radio" id="Em" class="change-chord" name="chords">
+      <label for="Em"><span>Em</span></label>
+    </div>
+
+    <div class="ch">
+      <input type="radio" id="G" class="change-chord" name="chords">
+      <label for="G"><span>G</span></label>
+    </div>
+    <div class="ch">
+      <input type="radio" id="Gm" class="change-chord" name="chords">
+      <label for="Gm"><span>Gm</span></label>
+    </div>
+
+    <div class="ch">
+      <input type="radio" id="C" class="change-chord" name="chords">
+      <label for="C"><span>C</span></label>
+    </div>
+
+    <div class="ch">
+      <input type="radio" id="Cm" class="change-chord" name="chords">
+      <label for="Cm"><span>Cm</span></label>
+    </div>
+
+    <div class="ch">
+      <input type="radio" id="B" class="change-chord" name="chords">
+      <label for="B"><span>B</span></label>
+    </div>
+
+    <div class="ch">
+      <input type="radio" id="Bm" class="change-chord" name="chords">
+      <label for="Bm"><span>Bm</span></label>
+    </div>
+
+    <div class="ch">
+      <input type="radio" id="F" class="change-chord" name="chords">
+      <label for="F"><span>F</span></label>
+    </div>
+
+    <div class="ch">
+      <input type="radio" id="Fm" class="change-chord" name="chords">
+      <label for="Fm"><span>Fm</span></label>
+    </div>
+
+  </div>
+  <p class="text-abs">Hold the mouse and strum the strings</p>
+  <div class="ukulele-model" style="background-image: url(http://cools2.bget.ru/img/ukulele_vector.png)">
+
+
+
+    <div id="finger-p-1" class="finger-position"></div>
+    <div id="finger-p-2" class="finger-position"></div>
+    <div id="finger-p-3" class="finger-position"></div>
+    <div id="finger-p-4" class="finger-position"></div>
+
+    <div id="strings-block" onmousemove="myMoveFunction()">
+      <canvas id="string-4"></canvas>
+      <canvas id="string-3"></canvas>
+      <canvas id="string-2"></canvas>
+      <canvas id="string-1"></canvas>
+    </div>
+
+  </div>
+
+  <a href="javascript:" id="play-chord">Play chord</a>
+  <a href="javascript:" id="stop-chord">Stop</a>
+  <p><b>↑</b> - arrow for strumUp</p>
+  <p><b>↓</b> - arrow for strumDown</p>
+  <p><b>←→</b> - arrows for snap</p>
+  <script src="script2.js"></script>
+</body>
+
+</html>
